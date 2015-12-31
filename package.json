@@ -1,6 +1,6 @@
 {
   "name": "plugo",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Dynamically expose hapi plugins",
   "main": "lib/index.js",
   "scripts": {
