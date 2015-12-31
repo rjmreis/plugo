@@ -1,7 +1,7 @@
 {
   "name": "plugo",
   "version": "1.0.0",
-  "description": "Dynamically Fetch Node.js Modules",
+  "description": "Dynamically expose hapi plugins",
   "main": "lib/index.js",
   "scripts": {
     "test": "./node_modules/lab/bin/lab -v",
