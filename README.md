@@ -1,0 +1,23 @@
+[![Dependencies Status](https://david-dm.org/rjmreis/plugo.svg)](https://david-dm.org/rjmreis/plugo)
+[![DevDependencies Status](https://david-dm.org/rjmreis/plugo/dev-status.svg)](https://david-dm.org/rjmreis/plugo#info=devDependencies)
+
+# plugo
+Dynamically expose hapi plugins from a given path
+
+## Usage
+```javascript
+const Plugo = require('plugo');
+
+exports.register = (plugin, options, next) => {
+  Plugo.expose({ path: __dirname + '/handlers' }, 'handlers', plugin, next);
+};
+
+exports.register.attributes = {
+  name: 'controllers'
+};
+```
+
+## Options
+The following options are available:
+* `path`: Specifies which folder to load files
+* `extension`: Specifies which file extension to look for (defaults to .js)
