@@ -1,3 +1,4 @@
+[![npm](https://img.shields.io/npm/v/plugo.svg)](https://www.npmjs.com/package/plugo)
 [![Build Status](https://secure.travis-ci.org/rjmreis/plugo.svg)](http://travis-ci.org/rjmreis/plugo)
 [![Dependencies Status](https://david-dm.org/rjmreis/plugo.svg)](https://david-dm.org/rjmreis/plugo)
 [![DevDependencies Status](https://david-dm.org/rjmreis/plugo/dev-status.svg)](https://david-dm.org/rjmreis/plugo#info=devDependencies)

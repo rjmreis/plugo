@@ -43,10 +43,11 @@ internals.prepareServer = function (options, callback) {
 };
 
 describe('expose()', () => {
-  it('Should create server and register Plugo', function (done) {
+  it('Should create server and register handlers plugin', function (done) {
     internals.prepareServer({}, function (server) {
       setTimeout(function () {
         expect(server).to.exist();
+        expect(server.plugins['api']['handlers']).to.exist();
         done();
       }, 20);
     });
