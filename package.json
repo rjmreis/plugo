@@ -1,11 +1,10 @@
 {
   "name": "plugo",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Dynamically expose hapi plugins",
   "main": "lib/index.js",
   "scripts": {
-    "test": "./node_modules/lab/bin/lab -v",
-    "start": "node server.js"
+    "test": "./node_modules/lab/bin/lab -v"
   },
   "repository": {
     "type": "git",
