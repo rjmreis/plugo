@@ -1,0 +1,31 @@
+{
+  "name": "plugo",
+  "version": "1.0.0",
+  "description": "Dynamically Fetch Node.js Modules",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "./node_modules/lab/bin/lab -v",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rjmreis/plugo.git"
+  },
+  "keywords": [
+    "hapi"
+  ],
+  "author": "Ricardo Reis",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rjmreis/plugo/issues"
+  },
+  "homepage": "https://github.com/rjmreis/plugo#readme",
+  "private": false,
+  "dependencies": {
+    "glob": "6.x.x"
+  },
+  "devDependencies": {
+    "code": "2.x.x",
+    "lab": "8.x.x"
+  }
+}
