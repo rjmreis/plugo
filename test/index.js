@@ -48,6 +48,7 @@ describe('expose()', () => {
       setTimeout(function () {
         expect(server).to.exist();
         expect(server.plugins['api']['handlers']).to.exist();
+        expect(server.plugins['api']['handlers']).to.not.be.empty();
         done();
       }, 20);
     });
