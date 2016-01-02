@@ -16,7 +16,7 @@ const expect = Code.expect;
 
 const internals = {};
 
-internals.prepareServer = function (options, callback) {
+internals.prepareServer = function (plugopt, callback) {
 
   var server = new Hapi.Server();
   server.connection({ labels: ['api'] });
@@ -24,7 +24,7 @@ internals.prepareServer = function (options, callback) {
 
   var api = {
     register: (plugin, options, next) => {
-      Plugo.expose({ path: __dirname + '/handlers' }, 'handlers', plugin, next);
+      Plugo.expose(plugopt, plugin, next);
     }
   };
 
@@ -43,14 +43,23 @@ internals.prepareServer = function (options, callback) {
 };
 
 describe('expose()', () => {
-  it('Should create server and register handlers plugin', function (done) {
-    internals.prepareServer({}, function (server) {
+  it('Should create server and register handlers plugin', done => {
+    internals.prepareServer({ name: 'handlers', path: __dirname + '/handlers' }, server => {
       setTimeout(function () {
         expect(server).to.exist();
         expect(server.plugins['api']['handlers']).to.exist();
         expect(server.plugins['api']['handlers']).to.not.be.empty();
+        
         done();
       }, 20);
     });
+  });
+  
+  it('Should throw error if passed options are invalid', done => {
+    expect(() => {
+      internals.prepareServer({ path: __dirname + '/handlers' }, server => {});
+    }).to.throw();
+    
+    done();
   });
 });

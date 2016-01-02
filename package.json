@@ -22,7 +22,8 @@
   "private": false,
   "dependencies": {
     "glob": "6.x.x",
-    "hapi": "^11.1.4"
+    "hapi": "^11.1.4",
+    "joi": "^7.1.0"
   },
   "devDependencies": {
     "code": "2.x.x",
