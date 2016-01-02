@@ -11,8 +11,13 @@ Dynamically expose modules to hapi plugins from a given path.
 const Plugo = require('plugo');
 
 exports.register = (plugin, options, next) => {
+  var plugoptions = {
+    name: 'handlers',
+    path: __dirname + '/handlers'
+  };
+  
   // Exposes modules in the handlers folder to this plugin
-  Plugo.expose({ name: 'handlers', path: __dirname + '/handlers' }, plugin, next);
+  Plugo.expose(plugoptions, plugin, next);
 };
 
 exports.register.attributes = {
@@ -22,6 +27,6 @@ exports.register.attributes = {
 
 ## Options
 The following options are available:
-* `name`: Defines name for plugins [*required*]
-* `path`: Specifies which folder to load files [*required*]
-* `extension`: Specifies which file extension to look for (defaults to .js)
+* `name`: Defines property name under plugin [`required`]
+* `path`: Specifies which folder to load files [`required`]
+* `extension`: Specifies which file extension to look for (defaults to .js) [`optional`]
