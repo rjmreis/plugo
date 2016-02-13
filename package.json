@@ -21,9 +21,9 @@
   "homepage": "https://github.com/rjmreis/plugo#readme",
   "private": false,
   "dependencies": {
-    "glob": "^6.0.4",
+    "glob": "^7.0.0",
     "hapi": "^13.0.0",
-    "joi": "^7.2.3"
+    "joi": "^7.3.0"
   },
   "devDependencies": {
     "code": "^2.1.0",
