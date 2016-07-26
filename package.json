@@ -1,6 +1,6 @@
 {
   "name": "plugo",
-  "version": "0.3.7",
+  "version": "0.3.8",
   "description": "Dynamically expose hapi plugins from a given path",
   "main": "lib/index.js",
   "scripts": {
@@ -21,13 +21,13 @@
   "homepage": "https://github.com/rjmreis/plugo#readme",
   "private": false,
   "dependencies": {
-    "glob": "~7.0.3",
-    "hapi": "^13.4.1",
-    "joi": "^8.4.0"
+    "glob": "^7.0.5",
+    "hapi": "^13.5.0",
+    "joi": "^9.0.4"
   },
   "devDependencies": {
-    "code": "^3.0.0",
-    "lab": "^10.7.1"
+    "code": "^3.0.1",
+    "lab": "^10.9.0"
   },
   "eslintConfig": {
     "env": {
