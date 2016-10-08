@@ -21,13 +21,13 @@
   "homepage": "https://github.com/rjmreis/plugo#readme",
   "private": false,
   "dependencies": {
-    "glob": "^7.0.6",
-    "hapi": "^15.0.2",
-    "joi": "^9.0.4"
+    "glob": "^7.1.1",
+    "hapi": "^15.1.1",
+    "joi": "^9.1.0"
   },
   "devDependencies": {
-    "code": "^3.0.2",
-    "lab": "^11.0.1"
+    "code": "^4.0.0",
+    "lab": "^11.1.0"
   },
   "eslintConfig": {
     "env": {
